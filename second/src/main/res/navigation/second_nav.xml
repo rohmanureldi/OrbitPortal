@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/second_nav"
+    app:startDestination="@id/secondFragment">
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.finansialku.second.screen.SecondFragment"
+        android:label="SecondFragment" >
+        <action
+            android:id="@+id/action_secondFragment_to_secondOneFragment"
+            app:destination="@id/secondOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondOneFragment"
+        android:name="com.finansialku.second.screen.SecondOneFragment"
+        android:label="SecondOneFragment" />
+</navigation>
